@@ -45,7 +45,7 @@ public class SwaggerConfig {
 
             docket
                     .select()
-                    .apis(RequestHandlerSelectors.basePackage("dio.springbootweb.controller"))
+                    .apis(RequestHandlerSelectors.basePackage("dio.web.api.controller"))
                     .paths(PathSelectors.any())
                     .build()
                     .apiInfo(this.informacoesApi().build())
